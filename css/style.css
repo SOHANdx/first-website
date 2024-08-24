@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* Common code start here */
+.hvcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* Common code end here */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+}
+/*navmenu section css start here*/
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #686de0;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+#navigation .logo {
+  margin-left: 30px;
+  width: 70px;
+  height: 70px;
+  border: 5px solid #c7ecee;
+  border-radius: 50%;
+}
+
+.logo h2 {
+  padding: 5px;
+  color: #fff;
+}
+
+#navigation ul {
+  margin-right: 50px;
+}
+
+#navigation ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+#navigation ul li a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.hero-area {
+  height: 90vh;
+  background: linear-gradient(to top right, rgba(178, 250, 234, 0.5), rgba(94, 211, 249, 0.5)), url('/img/heroaera.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*navmenu section css end here*/
+
+/*1st section css start here*/
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  margin: 10px auto;
+}
+.first-section-card {
+  width: 300px;
+  text-align: center;
+  background: #686de0;
+  margin: 0 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px gray;
+}
+  
+.first-section-card h2 {
+  margin: 10px 0;
+}
+/*1st section css end here*/
+
+/*2nd section css start here*/
+.smart-area-main{
+  padding: 20px 0;
+}
+.smart-header {
+  padding: 20px 0;
+  text-align: center;
+}
+.smart-header > h2 {
+  position: relative;
+  font-size: 50px;
+  display: inline-block; 
+}
+.smart-header > h2::after {
+  content: '';
+  display: block; 
+  width: 100px;
+  height: 5px;
+  background: #686de0;
+  margin: 10px auto; 
+  border-radius: 5px;
+}
+.smart-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+.smart-img, .smart-content-text {
+  flex-basis: 45%;
+}
+.smart-content-text{
+  width: 100%;
+}
+.smart-content-text h2{
+  margin-bottom: 10px;
+  color: #686de0;
+}
+.smart-content-text p{
+  font: 18px bold;
+}
+.smart-img img {
+  width: 100%;
+}
+/*2nd section css end here*/
+
+/*3rd section css start here*/
+.main-service-area{
+  background: #c7ecee;
+  padding: 20px ;
+}
+.service-heading{
+  text-align: center;
+  padding: 20px 0;
+}
+.service-heading h2{
+  font-size: 50px;
+}
+.service-card-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+.service-card{
+  background: #686de0;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0px 4px 10px 0px #a3966c;
+}
+.service-card h3{
+  padding: 10px 0;
+  font-size: 30px;
+}
+.service-card p{
+  font-size: 18px ;
+}
+/*3rd section css end here*/
+
+/*4th section css start here*/
+.products-card-container{
+  padding: 20px 0;
+}
+.pro-card-heading{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 50px;
+}
+.products-content{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.pro-card{
+  width: 300px;
+  margin-left: 10px ;
+  background: #c7ecee;
+  transition: box-shadow .5s;
+  color: gray;
+  box-shadow: 4px 4px 10px #a6a6a6;
+}
+  
+.pro-card-img img{
+  width:100%;
+}
+.pro-content-text{
+  text-align: center;
+}
+.pro-content-text h3{
+  font-size: 40px;
+}
+.pro-content-text h4{
+  font-size: 25px;
+  padding: 10px 0;
+}
+.pro-content-text p{
+  font-size: 18px;
+  padding: 10px 0;
+}
+.pro-content-text button{
+  width: 100%;
+  border: 0;
+  padding: 15px 30px;
+  background: #686de0;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/*4th section css end here*/
+
+/*5th section css start here*/
+.testimonial-main{
+  background:#c7ecee;
+  padding: 20px;
+}
+.testo-title{
+  text-align: center;
+  font-size: 35px;
+  padding: 10px 0;
+}
+.testo-card-parent{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+  padding: 20px 0;
+}
+.testo-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  background: #686de0;
+  box-shadow: 0px 4px 10px 0px #a3966c;
+}
+.test-img{
+  width: 200px;
+  border-radius: 50%;
+}
+.test-img img{
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #e8b000;
+}
+.testo-desc{
+  margin-left: 10px;
+}
+.testo-desc {
+  font: 18px bold;
+}
+.testo-desc span:nth-child(1){
+display: inline-block;
+color: #eee;
+font: 25px bold;
+margin-bottom: 5px;
+}
+.testo-desc span:nth-child(2){
+  font-weight: bold;
+  color: #fff;
+}
+/*5th section css end here*/
+
+/*6th section css start here*/
+.blog-main-container{
+padding: 20px;
+}
+.blog-title{
+  text-align: center;
+  font-size: 35px;
+  padding: 20px 0;
+}
+.blog-card-parent{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0 ;
+}
+.blog-card{
+width: 100%;
+margin: 0 auto;
+text-align: center;
+padding: 10px;
+background: #686de0;
+}
+.blog-img img{
+  width: 100%;
+}
+.blog-card-title{
+  color: #eee;
+  margin: 5px 0;
+}
+/*6th section css end here*/
+
+/*7th section css start here*/
+.contact-main-parent{
+  padding: 20px 0;
+}
+.contact-title{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 35px;
+}
+.contact-form-parent{
+  width: 100%;
+}
+.form-map{
+  display: flex;
+}
+.form-content{
+  background: #c7ecee;
+  width: 55%;
+}
+.map-contanier{
+  width: 45%;
+}
+.name-email{
+  display: flex;
+}
+.name-email h4{
+  margin: 40px 0px 0px 20px;
+}
+.name-email input{
+  width: 80%;
+  height: 40px;
+  margin: 10px  20px;
+  border: 0;
+  padding: 0 10px;
+}
+.subject h4{
+  margin: 0px 20px;
+}
+.subject input{
+  width: 80%;
+  height: 40px;
+  margin: 10px 20px;
+  border: 0;
+  padding: 0 10px;
+}
+.message h4{
+  margin: 0px 20px;
+}
+.message textarea{
+  width: 80%;
+  height: 100px;
+  margin: 10px 20px ;
+  border: 0;
+  resize: none;
+  padding: 10px;
+}
+.message-btn {
+ margin: 0 20px ;
+}
+.message-btn input{
+  background: #686de0;
+  border: 0;
+  padding: 15px;
+  color: #fff;
+  font-size: 25px;
+}
+.lower-map-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.lower-map-content{
+  width: 20%;
+}
+.lower-map-content i{
+  font-size: 30px;
+  background: #686de0;
+  padding: 20px;
+  color: #c7ecee;
+  border-radius: 50%;
+}
+.lower-map-content p{
+  padding-top: 10px;
+  text-transform: lowercase;
+  font-size: 18px;
+  color: #808080;
+}
+.first-word{
+  font-size: 20px;
+  font-weight: bold;
+}
+/*7th section css end here*/
+
+/*footer css start here*/
+.footer-main{
+  background: #222f3e;
+  padding: 20px 0;
+}
+.footer-upper-content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.upper-content{
+  width: 20%;
+}
+.upper-content h3{
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #b2bec3;
+}
+.upper-content > p{
+  margin: 10px 0;
+}
+.upper-content p,.footer-icon span{
+  color: #b2bec3;
+}
+.footer-contact-box p{
+  text-transform: lowercase;
+}
+.f-quick-links p, .s-quick-links p{
+  padding-bottom: 5px;
+}
+.footer-icon i{
+  
+  font-size: 30px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+}
+.footer-icon h4:nth-child(1) i{
+  color:  #1877F2;
+}
+.footer-icon h4:nth-child(2) i{
+  color: #FF0000;
+}
+.footer-icon h4:nth-child(3) i{
+  color: #0077B5;
+}
+hr{
+  margin: 10px 0;
+  height: 5px;
+  border-radius: 20px;
+  background: #eee;
+}
+.footer-lower-menu ul{
+  display: flex;
+  justify-content: center;
+}
+.footer-lower-menu ul li {
+  margin: 20px;
+}
+.footer-lower-menu ul li a{
+  color: #b2bec3;
+  font-size: 20px;
+  padding-left:10px;
+  font-weight: bold;
+}
+.coppyright p{
+  text-align: center;
+  font-size: 16px;
+  color:#fff ;
+}
+.coppyright span{
+  font-weight: bold;
+}
+/*footer css end here*/
